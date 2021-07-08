@@ -29,9 +29,9 @@
 
             </ul>
 
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+            <form class="d-flex" onsubmit="return false">
+                <input class="form-control me-2" type="search" placeholder="Buscar héroe..." (keyup.enter)="searchHero(searchInput.value)" #searchInput>
+                <button class="btn btn-outline-success" type="button" (click)="searchHero(searchInput.value)">Buscar</button>
             </form>
 
         </div>
