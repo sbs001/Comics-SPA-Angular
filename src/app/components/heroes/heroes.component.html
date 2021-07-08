@@ -2,7 +2,7 @@
 
 <div class="row row-cols-1 row-cols-md-3 g-4">
 
-    <div class="col" *ngFor="let hero of heros">
+    <div class="col animated fadeIn" *ngFor="let hero of heros; let i = index">
         <div class="card h-100">
             <img [src]="hero.img" class="card-img-top" alt="...">
             <div class="card-body">
@@ -12,7 +12,11 @@
             <div class="card-footer">
                 <small class="text-muted">{{ hero.aparicion }}</small>
             </div>
-            <button class="btn btn-outline-success">Ver mas...</button>
+
+            <button (click)="onClick(i)" class="btn btn-outline-success">Ver mas...</button>
+
+            <!-- <a class="btn btn-outline-success btn-block" [routerLink]="['/hero', i]">Ver más...</a> -->
+
         </div>
     </div>
 
