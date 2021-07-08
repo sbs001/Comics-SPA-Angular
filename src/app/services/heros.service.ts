@@ -69,5 +69,7 @@ export class HerosService {
   getHeros():Hero[]{
     return this.heros
   }
-
+  getHeroById(i:number):Hero{
+    return this.heros[i]
+  }
 }
