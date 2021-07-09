@@ -1,0 +1,19 @@
+.imgHome {
+    margin-top: 50px;
+    width: 20%;
+    animation: imgHome 3s linear infinite;
+}
+
+@keyframes imgHome {
+    0% {
+        transform: scale(0);
+        transform: rotateY(20deg);
+    }
+    50% {
+        transform: scale(1.2)
+    }
+    100% {
+        transform: scale(0);
+        transform: rotateY(-20deg);
+    }
+}
