@@ -34,3 +34,34 @@ body {
 .fadeIn {
     animation-name: fadeIn;
 }
+
+.h1Hero {
+    background-color: rgba(204, 10, 10, 0.802);
+    color: white;
+    width: fit-content;
+    margin-top: 50px;
+    border-radius: 100px;
+    padding: 10px;
+    animation: houseHero 3s ease-in infinite;
+}
+
+@keyframes houseHero {
+    0% {
+        transform: scale(0);
+    }
+    10% {
+        transform: scale(0.8);
+    }
+    25% {
+        transform: scale(1) rotateY(180deg);
+    }
+    50% {
+        transform: scale(1.1) rotateY(0deg);
+    }
+    75% {
+        transform: scale(0) translate(400px, 0px);
+    }
+    100% {
+        transform: translate(0) scale(0);
+    }
+}

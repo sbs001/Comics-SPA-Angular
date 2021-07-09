@@ -1,5 +1,10 @@
-<h1>{{heros.length}} <small>Resultados para: "{{ input }}" </small></h1>
+<h1>{{heros.length}} <small>Results for "{{ input }}" </small></h1>
 <hr>
+
+
+<div class="alert alert-danger" role="alert" *ngIf="!heros.length">
+    No matches found <a [routerLink]="['/home']" class="alert-link">Click here to go back Home</a>. Try again.
+</div>
 
 <div class="row row-cols-1 row-cols-md-3 g-4">
 
@@ -14,7 +19,7 @@
                 <small class="text-muted">{{ hero.aparicion }}</small>
             </div>
 
-            <a class="btn btn-outline-success btn-block" [routerLink]="['/hero', hero.id]">Ver más...</a>
+            <a class="btn btn-outline-success btn-block" [routerLink]="['/hero', hero.id]">See more...</a>
 
         </div>
     </div>

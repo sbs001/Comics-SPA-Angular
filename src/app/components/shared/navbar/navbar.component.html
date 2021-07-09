@@ -19,7 +19,7 @@
                 </li>
 
                 <li class="nav-item" routerLinkActive='active'>
-                    <a class="nav-link" [routerLink]="['heros']">Heroes</a>
+                    <a class="nav-link" [routerLink]="['heros']">Heros</a>
                 </li>
 
                 <li class="nav-item" routerLinkActive='active'>
@@ -30,8 +30,8 @@
             </ul>
 
             <form class="d-flex" onsubmit="return false">
-                <input class="form-control me-2" type="search" placeholder="Buscar héroe..." (keyup.enter)="searchHero(searchInput.value)" #searchInput>
-                <button class="btn btn-outline-success" type="button" (click)="searchHero(searchInput.value)">Buscar</button>
+                <input class="form-control me-2" type="search" placeholder="Search hero..." (keyup.enter)="searchHero(searchInput.value)" #searchInput>
+                <button class="btn btn-outline-success" type="button" (click)="searchHero(searchInput.value)">Search</button>
             </form>
 
         </div>
